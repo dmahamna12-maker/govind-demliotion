@@ -1,0 +1,3602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Govind Contractor | Building Demolition</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background: #ffffff;
+    color: #111111;
+}
+
+
+/* =================================================
+   TOP SECTION
+================================================= */
+
+.top-section {
+
+    position: relative;
+
+    width: 100%;
+    height: 100vh;
+
+    min-height: 700px;
+
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #ffffff;
+}
+
+
+/* =================================================
+   BACKGROUND VIDEO
+================================================= */
+
+.bg-video {
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    z-index: 0;
+
+    transform: scale(1.03);
+
+}
+
+
+/* =================================================
+   WHITE VIDEO EFFECT
+================================================= */
+
+.video-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    z-index: 1;
+
+    background:
+
+        linear-gradient(
+            90deg,
+            rgba(255,255,255,0.98) 0%,
+            rgba(255,255,255,0.92) 35%,
+            rgba(255,255,255,0.70) 60%,
+            rgba(255,255,255,0.38) 100%
+        );
+
+}
+
+
+/* =================================================
+   HEADER
+================================================= */
+
+.top-header {
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    height: 90px;
+
+    padding: 0 6%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    z-index: 20;
+
+    border-bottom: 1px solid rgba(0,0,0,0.12);
+
+    animation: headerReveal 1s ease forwards;
+
+}
+
+
+/* =================================================
+   LOGO
+================================================= */
+
+.logo-box {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    text-decoration: none;
+
+    color: #111;
+
+}
+
+
+.logo-box img {
+
+    width: 65px;
+
+    height: 65px;
+
+    object-fit: ;
+
+}
+
+
+.logo-name {
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+
+.logo-name h3 {
+
+    font-size: 20px;
+
+    font-weight: 900;
+
+    letter-spacing: 3px;
+
+}
+
+
+.logo-name span {
+
+    font-size: 22px;
+
+    font-weight: 700;
+
+    letter-spacing: 4px;
+
+    margin-top: 3px;
+
+}
+
+
+/* =================================================
+   NAVIGATION
+================================================= */
+
+.navigation {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 35px;
+
+}
+
+
+.navigation a {
+
+    position: relative;
+
+    text-decoration: none;
+
+    color: #111;
+
+    font-size: 15px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+
+    padding: 10px 0;
+
+}
+
+
+.navigation a::after {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    bottom: 0;
+
+    width: 0;
+
+    height: 2px;
+
+    background: #111;
+
+    transition: 0.35s;
+
+}
+
+
+.navigation a:hover::after {
+
+    width: 100%;
+
+}
+
+
+/* =================================================
+   CALL BUTTON
+================================================= */
+
+.top-call {
+
+    text-decoration: none;
+
+    color: #ffffff;
+
+    background: #111111;
+
+    padding: 14px 24px;
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+
+    border-radius: 3px;
+
+    transition: 0.35s;
+
+}
+
+
+.top-call:hover {
+
+    transform: translateY(-4px);
+
+    background: #333333;
+
+}
+
+
+/* =================================================
+   MAIN CONTENT
+================================================= */
+
+.top-content {
+
+    position: relative;
+
+    z-index: 10;
+
+    width: 90%;
+
+    max-width: 1100px;
+
+    text-align: center;
+
+}
+
+
+/* =================================================
+   SMALL TITLE
+================================================= */
+
+.top-line {
+
+    display: inline-block;
+
+    width: 35px;
+
+    height: 5px;
+
+    background: #111;
+
+    vertical-align: middle;
+
+    margin: 0 12px;
+
+}
+
+
+.top-content .reveal-1 p {
+
+    display: inline-block;
+
+    font-size: 20px;
+
+    font-weight: 800;
+
+    letter-spacing: 5px;
+
+}
+
+
+/* =================================================
+   MAIN TITLE
+================================================= */
+
+.top-content h1 {
+
+    margin-top: 20px;
+
+    font-size: clamp(50px, 10vw, 125px);
+
+    line-height: 0.85;
+
+    font-weight: 900;
+
+    letter-spacing: -6px;
+
+    color: #111;
+
+}
+
+
+.top-content h1 span {
+
+    display: block;
+    
+}
+
+
+/* =================================================
+   DEMOLITION TITLE
+================================================= */
+
+.top-content h2 {
+
+    margin-top: 30px;
+
+    font-size: clamp(18px, 3vw, 32px);
+
+    letter-spacing: 8px;
+
+    font-weight: 500;
+
+}
+
+
+.top-content h2 strong {
+
+    color: #666;
+
+}
+
+
+/* =================================================
+   DETAILS
+================================================= */
+
+.details {
+
+    margin-top: 20px;
+
+    color: #444;
+
+    font-size: 22px;
+
+    line-height: 1.9;
+
+    font-weight: 500;
+
+}
+
+
+/* =================================================
+   BUTTONS
+================================================= */
+
+.buttons {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 12px;
+
+    margin-top: 30px;
+
+}
+
+
+.main-btn,
+.whatsapp-btn {
+
+    min-width: 155px;
+
+    padding: 16px 25px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-decoration: none;
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+
+    border-radius: 3px;
+
+    transition: 0.35s;
+
+}
+
+
+/* CALL */
+
+.main-btn {
+
+    background: #111;
+
+    color: #fff;
+
+}
+
+
+.main-btn:hover {
+
+    background: #333;
+
+    transform: translateY(-5px);
+
+}
+
+
+/* WHATSAPP */
+
+.whatsapp-btn {
+
+    color: #111;
+
+    border: 1px solid #111;
+
+    background: rgba(255,255,255,0.7);
+
+}
+
+
+.whatsapp-btn:hover {
+
+    background: #111;
+
+    color: #fff;
+
+    transform: translateY(-5px);
+
+}
+
+
+.wa-icon {
+
+    width: 20px;
+
+    height: 20px;
+
+    margin-right: 8px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border: 2px solid currentColor;
+
+    font-size: 9px;
+
+    font-weight: 900;
+
+}
+
+
+/* =================================================
+   CONTACT NUMBERS
+================================================= */
+
+.contact-numbers {
+
+    position: absolute;
+
+    left: 6%;
+
+    bottom: 35px;
+
+    z-index: 15;
+
+    display: flex;
+
+    gap: 35px;
+
+}
+
+
+.contact-numbers a {
+
+    text-decoration: none;
+
+    color: #111;
+
+    border-left: 2px solid #111;
+
+    padding-left: 12px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 5px;
+
+    transition: 0.3s;
+
+}
+
+
+.contact-numbers a:hover {
+
+    transform: translateY(-5px);
+
+}
+
+
+.contact-numbers small {
+
+    font-size: 7px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+    color: #777;
+
+}
+
+
+.contact-numbers strong {
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+}
+
+
+/* =================================================
+   SCROLL
+================================================= */
+
+.scroll-indicator {
+
+    position: absolute;
+
+    right: 6%;
+
+    bottom: 35px;
+
+    z-index: 15;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    font-size: 8px;
+
+    font-weight: 800;
+
+    letter-spacing: 3px;
+
+}
+
+
+.scroll-indicator span {
+
+    width: 35px;
+
+    height: 1px;
+
+    background: #111;
+
+    animation: scrollAnimation 1.5s infinite;
+
+}
+
+
+/* =================================================
+   HIDE / REVEAL EFFECT
+================================================= */
+
+.reveal {
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transform: translateY(60px);
+
+}
+
+
+/* =================================================
+   ANIMATIONS
+================================================= */
+
+.reveal-1 {
+
+    animation: revealUp 0.9s 0.2s ease forwards;
+
+}
+
+
+.reveal-2 {
+
+    animation: titleReveal 1s 0.35s ease forwards;
+
+}
+
+
+.reveal-3 {
+
+    animation: revealUp 0.9s 0.55s ease forwards;
+
+}
+
+
+.reveal-4 {
+
+    animation: revealUp 0.9s 0.7s ease forwards;
+
+}
+
+
+.reveal-5 {
+
+    animation: revealUp 0.9s 0.85s ease forwards;
+
+}
+
+
+.reveal-6 {
+
+    animation: revealUp 0.9s 1.1s ease forwards;
+
+}
+
+
+/* =================================================
+   KEYFRAMES
+================================================= */
+
+@keyframes revealUp {
+
+    0% {
+
+        opacity: 0;
+
+        visibility: hidden;
+
+        transform: translateY(60px);
+
+    }
+
+    100% {
+
+        opacity: 1;
+
+        visibility: visible;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+
+@keyframes titleReveal {
+
+    0% {
+
+        opacity: 0;
+
+        visibility: hidden;
+
+        transform: translateY(70px) scale(0.92);
+
+        letter-spacing: 10px;
+
+    }
+
+    100% {
+
+        opacity: 1;
+
+        visibility: visible;
+
+        transform: translateY(0) scale(1);
+
+        letter-spacing: -6px;
+
+    }
+
+}
+
+
+@keyframes headerReveal {
+
+    0% {
+
+        opacity: 0;
+
+        transform: translateY(-40px);
+
+    }
+
+    100% {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+
+@keyframes scrollAnimation {
+
+    0% {
+
+        width: 8px;
+
+        opacity: 0.3;
+
+    }
+
+    50% {
+
+        width: 35px;
+
+        opacity: 1;
+
+    }
+
+    100% {
+
+        width: 8px;
+
+        opacity: 0.3;
+
+    }
+
+}
+
+
+/* =================================================
+   MOBILE
+================================================= */
+
+@media (max-width: 850px) {
+
+    .navigation {
+
+        display: none;
+
+    }
+
+    .top-header {
+
+        padding: 0 5%;
+
+    }
+
+    .top-call {
+
+        padding: 12px 15px;
+
+    }
+
+    .top-content h1 {
+
+        font-size: 55px;
+
+        letter-spacing: -3px;
+
+    }
+
+    .top-content h2 {
+
+        font-size: 15px;
+
+        letter-spacing: 4px;
+
+    }
+
+    .contact-numbers {
+
+        left: 5%;
+
+        right: 5%;
+
+        bottom: 20px;
+
+        gap: 10px;
+
+        justify-content: space-between;
+
+    }
+
+    .contact-numbers a {
+
+        padding-left: 6px;
+
+    }
+
+    .contact-numbers strong {
+
+        font-size: 8px;
+
+    }
+
+    .contact-numbers small {
+
+        font-size: 6px;
+
+    }
+
+    .scroll-indicator {
+
+        display: none;
+
+    }
+
+}
+
+
+@media (max-width: 550px) {
+
+    .top-call {
+
+        display: none;
+
+    }
+
+    .logo-box img {
+
+        width: 45px;
+
+        height: 45px;
+
+    }
+
+    .logo-name h3 {
+
+        font-size: 16px;
+
+    }
+
+    .logo-name span {
+
+        font-size: 7px;
+
+    }
+
+    .top-content h1 {
+
+        font-size: 46px;
+
+    }
+
+    .top-line {
+
+        width: 20px;
+
+        margin: 0 6px;
+
+    }
+
+    .top-content .reveal-1 p {
+
+        font-size: 7px;
+
+        letter-spacing: 3px;
+
+    }
+
+    .buttons {
+
+        flex-direction: column;
+
+        width: 210px;
+
+        margin-left: auto;
+
+        margin-right: auto;
+
+    }
+
+}
+/* =====================================================
+   INFINITE DEMOLITION SLIDER
+   ===================================================== */
+
+.demolition-slider {
+
+    width: 100%;
+
+    background: #ffffff;
+
+    padding: 90px 0 0;
+
+    overflow: hidden;
+
+}
+
+
+/* ================= HEADING ================= */
+
+.slider-heading {
+
+    text-align: center;
+
+    padding: 0 20px 45px;
+
+}
+
+.slider-heading span {
+
+    font-size: 22px;
+
+    font-weight: 800;
+
+    letter-spacing: 5px;
+
+    color: #777;
+
+}
+
+.slider-heading h2 {
+
+    margin-top: 12px;
+
+    font-size: clamp(30px, 5vw, 55px);
+
+    font-weight: 900;
+
+    letter-spacing: -2px;
+
+    color: #111;
+
+}
+
+.slider-heading h2 strong {
+
+    color: #777;
+
+}
+
+
+/* ================= SLIDER WINDOW ================= */
+
+.slider-window {
+
+    width: 100%;
+
+    overflow: hidden;
+
+    position: relative;
+
+}
+
+
+/* ================= TRACK ================= */
+
+.slider-track {
+
+    display: flex;
+
+    width: max-content;
+
+    gap: 0;
+
+    animation: demolitionInfinite 28s linear infinite;
+
+}
+
+
+/* ================= IMAGE ================= */
+
+.slide {
+
+    flex: 0 0 25vw;
+
+    width: 25vw;
+
+    height: 360px;
+
+    margin: 0;
+
+    padding: 0;
+
+    overflow: hidden;
+
+}
+
+
+.slide img {
+
+    width: 100%;
+
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    margin: 0;
+
+    padding: 0;
+
+    filter: grayscale(100%);
+
+    transform: scale(1);
+
+    transition: filter 0.5s ease,
+                transform 0.6s ease;
+
+}
+
+
+/* HOVER */
+
+.slide:hover img {
+
+    filter: grayscale(0%);
+
+    transform: scale(1.08);
+
+}
+
+
+/* ================= INFINITE ANIMATION ================= */
+
+@keyframes demolitionInfinite {
+
+    from {
+
+        transform: translateX(0);
+
+    }
+
+    to {
+
+        transform: translateX(-50%);
+
+    }
+
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 900px) {
+
+    .slide {
+
+        flex: 0 0 50vw;
+
+        width: 50vw;
+
+        height: 300px;
+
+    }
+
+    .slider-track {
+
+        animation-duration: 22s;
+
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .demolition-slider {
+
+        padding-top: 70px;
+
+    }
+
+    .slide {
+
+        flex: 0 0 85vw;
+
+        width: 85vw;
+
+        height: 280px;
+
+    }
+
+    .slider-track {
+
+        animation-duration: 18s;
+
+    }
+
+}
+/* =====================================================
+   OUR WORK VIDEO SECTION
+===================================================== */
+
+.work-videos {
+
+    width: 100%;
+
+    padding: 100px 6%;
+
+    background: #ffffff;
+
+    color: #111111;
+
+}
+
+
+/* ================= HEADING ================= */
+
+.work-heading {
+
+    text-align: center;
+
+    margin-bottom: 55px;
+
+}
+
+.work-heading span {
+
+    font-size: 20px;
+
+    font-weight: 800;
+
+    letter-spacing: 5px;
+
+    color: #777777;
+
+}
+
+.work-heading h2 {
+
+    margin-top: 12px;
+
+    font-size: clamp(32px, 5vw, 58px);
+
+    line-height: 1;
+
+    font-weight: 900;
+
+    letter-spacing: -2px;
+
+}
+
+.work-heading h2 strong {
+
+    color: #777777;
+
+}
+
+.work-heading p {
+
+    margin-top: 18px;
+
+    font-size: 18px;
+
+    color: #000;
+
+}
+
+
+/* ================= VIDEO GRID ================= */
+
+.video-grid {
+
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 28px;
+
+}
+
+
+/* ================= VIDEO BOX ================= */
+
+.work-video {
+
+    position: relative;
+
+    width: 100%;
+
+    height: 390px;
+
+    overflow: hidden;
+
+    background: #111111;
+
+    border-radius: 4px;
+
+    opacity: 0;
+
+    transform: translateY(50px);
+
+    animation: videoReveal 0.8s ease forwards;
+
+}
+
+
+/* Animation delay */
+
+.work-video:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.work-video:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.work-video:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.work-video:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.work-video:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+.work-video:nth-child(6) {
+    animation-delay: 0.6s;
+}
+
+
+/* ================= VIDEO ================= */
+
+.work-video video {
+
+    width: 100%;
+
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform 0.6s ease;
+
+}
+
+
+/* Hover zoom */
+
+.work-video:hover video {
+
+    transform: scale(1.05);
+
+}
+
+
+/* ================= DARK EFFECT ================= */
+
+.work-video::after {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    height: 35%;
+
+    background:
+        linear-gradient(
+            transparent,
+            rgba(0,0,0,0.85)
+        );
+
+    pointer-events: none;
+
+}
+
+
+/* ================= VIDEO LABEL ================= */
+
+.video-label {
+
+    position: absolute;
+
+    left: 25px;
+
+    bottom: 22px;
+
+    z-index: 5;
+
+    color: #ffffff;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+
+}
+
+
+.video-label span {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 30px;
+
+    height: 30px;
+
+    margin-right: 10px;
+
+    border: 1px solid rgba(255,255,255,0.7);
+
+    border-radius: 50%;
+
+    font-size: 9px;
+
+}
+
+
+/* ================= REVEAL ANIMATION ================= */
+
+@keyframes videoReveal {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(50px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+
+/* ================= TABLET ================= */
+
+@media (max-width: 900px) {
+
+    .work-videos {
+
+        padding: 80px 5%;
+
+    }
+
+    .video-grid {
+
+        gap: 20px;
+
+    }
+
+    .work-video {
+
+        height: 320px;
+
+    }
+
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 600px) {
+
+    .work-videos {
+
+        padding: 70px 5%;
+
+    }
+
+    .video-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+
+    }
+
+    .work-video {
+
+        height: 300px;
+
+    }
+
+}
+/* =====================================================
+   DEMOLITION ABOUT SECTION
+===================================================== */
+
+.demolition-about {
+
+    width: 100%;
+
+    padding: 120px 7%;
+
+    background: #ffffff;
+
+    overflow: hidden;
+
+}
+
+
+.demolition-about-container {
+
+    max-width: 1300px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 0.9fr 1.1fr;
+
+    gap: 80px;
+
+    align-items: center;
+
+}
+
+
+/* =====================================================
+   LEFT DETAILS
+===================================================== */
+
+.demolition-info {
+
+    padding-right: 20px;
+
+}
+
+
+.about-small {
+
+    display: inline-block;
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: 4px;
+
+    color: #777;
+
+    margin-bottom: 18px;
+
+}
+
+
+.demolition-info h2 {
+
+    font-size: clamp(35px, 4vw, 60px);
+
+    line-height: 1.05;
+
+    font-weight: 900;
+
+    letter-spacing: -2px;
+
+    color: #111;
+
+}
+
+
+.demolition-info h2 strong {
+
+    display: block;
+
+    color: #777;
+
+}
+
+
+.about-line {
+
+    width: 65px;
+
+    height: 3px;
+
+    background: #111;
+
+    margin: 25px 0;
+
+}
+
+
+.demolition-info > p {
+
+    font-size: 13px;
+
+    line-height: 1.9;
+
+    color: #666;
+
+    margin-bottom: 15px;
+
+}
+
+
+.demolition-info .about-main-text {
+
+    color: #333;
+
+    font-weight: 500;
+
+}
+
+
+/* ================= GOVIND ABOUT ================= */
+
+.gc-about {
+    width: 100%;
+    padding: 100px 7%;
+    background: #f0f0f0;
+    color: #111111;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+
+/* LEFT */
+
+.gc-about-left {
+    width: 100%;
+}
+
+.gc-label {
+    display: block;
+
+    font-size: 19px;
+    font-weight: 800;
+    letter-spacing: 4px;
+
+    color: #000;
+
+    margin-bottom: 18px;
+}
+
+.gc-about-left h2 {
+    margin: 0;
+
+    font-size: clamp(35px, 5vw, 60px);
+    line-height: 1.05;
+
+    font-weight: 900;
+    letter-spacing: -2px;
+}
+
+.gc-about-left h2 span {
+    display: block;
+    color: #777777;
+}
+
+.gc-line {
+    width: 60px;
+    height: 3px;
+
+    background: #111111;
+
+    margin: 25px 0;
+}
+
+.gc-about-left > p {
+    max-width: 900px;
+
+    font-size: 16px;
+    line-height: 1.9;
+
+    color: #000000;
+
+    margin-bottom: 14px;
+}
+
+
+/* FEATURES */
+
+.gc-features {
+    margin-top: 30px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+.gc-feature {
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+
+    padding-bottom: 15px;
+
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.gc-feature b {
+    width: 38px;
+    height: 38px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #111111;
+    color: #ffffff;
+
+    font-size: 15px;
+}
+
+.gc-feature h3 {
+    margin: 0 0 4px;
+
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.gc-feature p {
+    margin: 0;
+
+    font-size: 17px;
+    color: #000;
+}
+
+
+/* BUTTON */
+
+.gc-button {
+    display: inline-block;
+
+    margin-top: 30px;
+
+    padding: 15px 25px;
+
+    background: #111111;
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-size: 10px;
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+
+    transition: 0.3s;
+}
+
+.gc-button:hover {
+    background: #333333;
+    transform: translateY(-4px);
+}
+
+
+/* ================= RIGHT IMAGE ================= */
+
+.gc-about-right {
+    position: relative;
+
+    width: 100%;
+    height: 570px;
+
+    overflow: hidden;
+
+    background: #111111;
+}
+
+.gc-about-right img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    filter: grayscale(100%);
+
+    transition:
+        transform 0.7s ease,
+        filter 0.7s ease;
+}
+
+.gc-about-right:hover img {
+    transform: scale(1.06);
+
+    filter: grayscale(0%);
+}
+
+
+/* IMAGE DARK EFFECT */
+
+.gc-about-right::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    height: 45%;
+
+    background: linear-gradient(
+        transparent,
+        rgba(0,0,0,0.85)
+    );
+
+    pointer-events: none;
+}
+
+
+/* IMAGE TEXT */
+
+.gc-image-text {
+    position: absolute;
+
+    left: 30px;
+    bottom: 30px;
+
+    z-index: 2;
+
+    color: #ffffff;
+}
+
+.gc-image-text small {
+    font-size: 9px;
+
+    letter-spacing: 4px;
+
+    font-weight: 700;
+}
+
+.gc-image-text h3 {
+    margin-top: 10px;
+
+    font-size: 30px;
+
+    line-height: 1;
+
+    font-weight: 900;
+}
+
+
+/* ================= ANIMATION ================= */
+
+.gc-about-left {
+    animation: gcLeft 0.9s ease both;
+}
+
+.gc-about-right {
+    animation: gcRight 0.9s ease 0.15s both;
+}
+
+@keyframes gcLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes gcRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 900px) {
+
+    .gc-about {
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+
+        padding: 80px 6%;
+    }
+
+    .gc-about-right {
+        height: 450px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .gc-about {
+        padding: 65px 5%;
+    }
+
+    .gc-about-left h2 {
+        font-size: 36px;
+    }
+
+    .gc-about-right {
+        height: 380px;
+    }
+
+    .gc-image-text {
+        left: 20px;
+        bottom: 20px;
+    }
+
+    .gc-image-text h3 {
+        font-size: 24px;
+    }
+}
+/* =====================================================
+   GOVIND CONTRACTOR FOOTER
+===================================================== */
+
+.gc-footer {
+
+    width: 100%;
+
+    background: #0b0b0b;
+
+    color: #ffffff;
+
+    margin-top: 0;
+
+    overflow: hidden;
+
+}
+
+
+/* =====================================================
+   FOOTER MAIN
+===================================================== */
+
+.gc-footer-main {
+
+    max-width: 1400px;
+
+    margin: auto;
+
+    padding: 80px 7% 65px;
+
+    display: grid;
+
+    grid-template-columns:
+        1.5fr
+        0.8fr
+        1fr
+        1.3fr;
+
+    gap: 55px;
+
+}
+
+
+/* =====================================================
+   BRAND
+===================================================== */
+
+.gc-footer-brand {
+
+    max-width: 350px;
+
+}
+
+
+.gc-footer-logo {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 13px;
+
+}
+
+
+.gc-footer-logo img {
+
+    width: 58px;
+
+    height: 58px;
+
+    object-fit: contain;
+
+}
+
+
+.gc-footer-logo h2 {
+
+    margin: 0;
+
+    font-size: 21px;
+
+    font-weight: 900;
+
+    letter-spacing: 3px;
+
+}
+
+
+.gc-footer-logo span {
+
+    display: block;
+
+    margin-top: 3px;
+
+    font-size: 8px;
+
+    font-weight: 700;
+
+    letter-spacing: 4px;
+
+    color: #aaaaaa;
+
+}
+
+
+.gc-footer-brand > p {
+
+    margin-top: 22px;
+
+    color: #999999;
+
+    font-size: 12px;
+
+    line-height: 1.9;
+
+}
+
+
+/* =====================================================
+   SOCIAL ICONS
+===================================================== */
+
+.gc-social {
+
+    display: flex;
+
+    gap: 10px;
+
+    margin-top: 25px;
+
+}
+
+
+.gc-social a {
+
+    width: 42px;
+
+    height: 42px;
+
+    border: 1px solid #444444;
+
+    color: #ffffff;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-decoration: none;
+
+    border-radius: 50%;
+
+    transition: 0.35s;
+
+}
+
+
+.gc-social a:hover {
+
+    background: #ffffff;
+
+    color: #111111;
+
+    border-color: #ffffff;
+
+    transform: translateY(-5px);
+
+}
+
+
+.gc-wa-icon {
+
+    font-size: 13px;
+
+    font-weight: 900;
+
+}
+
+
+.gc-call-icon {
+
+    font-size: 17px;
+
+}
+
+
+.gc-instagram-icon {
+
+    font-size: 25px;
+
+    line-height: 1;
+
+}
+
+
+/* =====================================================
+   FOOTER COLUMNS
+===================================================== */
+
+.gc-footer-column {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+}
+
+
+.gc-footer-column h3 {
+
+    margin: 0 0 22px;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    letter-spacing: 3px;
+
+    color: #ffffff;
+
+}
+
+
+.gc-footer-column > a {
+
+    position: relative;
+
+    text-decoration: none;
+
+    color: #999999;
+
+    font-size: 11px;
+
+    margin-bottom: 14px;
+
+    transition: 0.3s;
+
+}
+
+
+.gc-footer-column > a:hover {
+
+    color: #ffffff;
+
+    transform: translateX(5px);
+
+}
+
+
+/* =====================================================
+   CONTACT
+===================================================== */
+
+.gc-contact > a {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    width: 100%;
+
+}
+
+
+.gc-contact > a > span {
+
+    width: 35px;
+
+    height: 35px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border: 1px solid #444444;
+
+    border-radius: 50%;
+
+    color: #ffffff;
+
+    font-size: 12px;
+
+}
+
+
+.gc-contact > a > div {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 4px;
+
+}
+
+
+.gc-contact small {
+
+    color: #FFFFFF;
+
+    font-size: 13px;
+
+    letter-spacing: 2px;
+
+}
+
+
+.gc-contact strong {
+
+    color: #bbbbbb;
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+}
+
+
+.gc-contact > a:hover strong {
+
+    color: #ffffff;
+
+}
+
+
+/* =====================================================
+   WHATSAPP BUTTON
+===================================================== */
+
+.gc-contact .gc-footer-whatsapp {
+
+    width: auto;
+
+    margin-top: 5px;
+
+    padding: 11px 16px;
+
+    border: 1px solid #444444;
+
+    display: inline-flex;
+
+    gap: 8px;
+
+}
+
+
+.gc-contact .gc-footer-whatsapp span {
+
+    width: 23px;
+
+    height: 23px;
+
+    border: 1px solid #ffffff;
+
+    font-size: 20px;
+
+}
+
+
+.gc-contact .gc-footer-whatsapp {
+
+    color: #ffffff;
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+
+}
+
+
+.gc-contact .gc-footer-whatsapp:hover {
+
+    background: #777777;
+
+    color: #111111;
+
+}
+
+
+/* =====================================================
+   FOOTER BOTTOM
+===================================================== */
+
+.gc-footer-bottom {
+
+    max-width: 1400px;
+
+    margin: auto;
+
+    padding: 20px 7%;
+
+    border-top: 1px solid #292929;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+}
+
+
+.gc-footer-bottom p {
+
+    margin: 0;
+
+    color: #fffff;
+
+    font-size: 20px;
+
+    letter-spacing: 0.5px;
+
+}
+
+
+.gc-footer-bottom strong {
+
+    color: #aaaaaa;
+
+}
+
+
+/* =====================================================
+   FOOTER MOBILE
+===================================================== */
+
+@media (max-width: 950px) {
+
+    .gc-footer-main {
+
+        grid-template-columns: 1fr 1fr;
+
+        gap: 45px;
+
+    }
+
+    .gc-footer-brand {
+
+        max-width: 100%;
+
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .gc-footer-main {
+
+        grid-template-columns: 1fr;
+
+        padding: 60px 7% 45px;
+
+        gap: 40px;
+
+    }
+
+
+    .gc-footer-brand {
+
+        max-width: 100%;
+
+    }
+
+
+    .gc-footer-bottom {
+
+        padding: 18px 7%;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 8px;
+
+    }
+
+
+    .gc-footer-logo img {
+
+        width: 50px;
+
+        height: 50px;
+
+    }
+
+
+    .gc-footer-logo h2 {
+
+        font-size: 25px;
+
+    }
+
+}
+/* =====================================================
+   VISITING CARD / CONTRACTOR DETAILS
+   ===================================================== */
+
+.visiting-card-section {
+    width: 100%;
+    padding: 100px 7%;
+    background: #ffffff;
+    overflow: hidden;
+}
+
+.visiting-card-container {
+    max-width: 1300px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+
+    gap: 80px;
+    align-items: center;
+}
+
+
+/* ===============================
+   LEFT VISITING CARD IMAGE
+   =============================== */
+
+.visiting-card-image {
+    width: 100%;
+    max-width: 550px;
+
+    background: #111111;
+
+    padding: 15px;
+
+    box-shadow:
+        0 25px 60px rgba(0,0,0,0.18);
+
+    overflow: hidden;
+}
+
+.visiting-card-image img {
+    width: 100%;
+    height: auto;
+
+    display: block;
+
+    object-fit: contain;
+
+    transition: transform 0.6s ease;
+}
+
+.visiting-card-image:hover img {
+    transform: scale(1.04);
+}
+
+
+/* ===============================
+   RIGHT DETAILS
+   =============================== */
+
+.visiting-card-details {
+    color: #111111;
+}
+
+.vc-small-title {
+    display: block;
+
+    font-size: 11px;
+    font-weight: 800;
+
+    letter-spacing: 4px;
+
+    color: #777777;
+
+    margin-bottom: 15px;
+}
+
+.visiting-card-details h2 {
+    margin: 0;
+
+    font-size: clamp(40px, 5vw, 65px);
+
+    line-height: 0.95;
+
+    font-weight: 900;
+
+    letter-spacing: -3px;
+}
+
+.visiting-card-details h2 span {
+    display: block;
+    color: #777777;
+}
+
+.vc-line {
+    width: 65px;
+    height: 3px;
+
+    background: #111111;
+
+    margin: 25px 0;
+}
+
+.vc-description {
+    max-width: 650px;
+
+    color: #555555;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+
+    margin-bottom: 25px;
+}
+
+
+/* ===============================
+   DETAILS
+   =============================== */
+
+.vc-detail {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 14px 0;
+
+    border-bottom: 1px solid #e5e5e5;
+
+    max-width: 500px;
+}
+
+.vc-icon {
+    width: 42px;
+    height: 42px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background: #111111;
+
+    color: #ffffff;
+
+    font-size: 15px;
+}
+
+.vc-detail small {
+    display: block;
+
+    color: #777777;
+
+    font-size: 8px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 4px;
+}
+
+.vc-detail strong,
+.vc-detail a {
+    color: #111111;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: 700;
+}
+
+.vc-detail a:hover {
+    text-decoration: underline;
+}
+
+
+/* ===============================
+   BUTTONS
+   =============================== */
+
+.vc-buttons {
+    display: flex;
+
+    gap: 12px;
+
+    margin-top: 30px;
+}
+
+.vc-call-btn,
+.vc-whatsapp-btn {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 9px;
+
+    padding: 15px 22px;
+
+    text-decoration: none;
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+
+    transition: 0.3s;
+}
+
+.vc-call-btn {
+    background: #111111;
+    color: #ffffff;
+}
+
+.vc-call-btn:hover {
+    background: #333333;
+
+    transform: translateY(-4px);
+}
+
+.vc-whatsapp-btn {
+    border: 1px solid #111111;
+
+    color: #111111;
+
+    background: #ffffff;
+}
+
+.vc-whatsapp-btn:hover {
+    background: #111111;
+
+    color: #ffffff;
+
+    transform: translateY(-4px);
+}
+
+
+/* =====================================================
+   TABLET
+   ===================================================== */
+
+@media (max-width: 900px) {
+
+    .visiting-card-section {
+        padding: 80px 6%;
+    }
+
+    .visiting-card-container {
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+    }
+
+    .visiting-card-image {
+        max-width: 650px;
+
+        margin: auto;
+    }
+
+    .visiting-card-details {
+        width: 100%;
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+   ===================================================== */
+
+@media (max-width: 600px) {
+
+    .visiting-card-section {
+        padding: 65px 5%;
+    }
+
+    .visiting-card-details h2 {
+        font-size: 42px;
+
+        letter-spacing: -2px;
+    }
+
+    .vc-description {
+        font-size: 13px;
+    }
+
+    .vc-detail {
+        max-width: 100%;
+    }
+
+    .vc-buttons {
+        flex-direction: column;
+
+        width: 100%;
+    }
+
+    .vc-call-btn,
+    .vc-whatsapp-btn {
+        width: 100%;
+    }
+
+}
+</style>
+</head>
+
+<body>
+
+<!-- ================= TOP SECTION ================= -->
+
+<section class="top-section">
+
+    <!-- BACKGROUND VIDEO -->
+    <video class="bg-video" autoplay muted loop playsinline>
+        <source src="video2.mp4" type="video/mp4">
+    </video>
+
+    <!-- VIDEO WHITE OVERLAY -->
+    <div class="video-overlay"></div>
+
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="top-header">
+
+        <!-- LOGO -->
+        <a href="#" class="logo-box">
+
+            <img src="https://demolitioncontractorshyderabad.com/wp-content/uploads/2022/02/Demolition-contractors-hyderabad-resized.png" alt="Govind Contractor Logo">
+
+            <div class="logo-name">
+                <h3>GOVIND</h3>
+                <span>CONTRACTOR</span>
+            </div>
+
+        </a>
+
+
+        <!-- NAVIGATION -->
+
+        <nav class="navigation">
+
+            <a href="#home">HOME</a>
+            <a href="#services">SERVICES</a>
+            <a href="#about">ABOUT</a>
+            <a href="#contact">CONTACT</a>
+
+        </nav>
+
+
+        <!-- CALL BUTTON -->
+
+        <a href="tel:+917210595966" class="top-call">
+            CALL NOW
+        </a>
+
+    </header>
+
+
+    <!-- ================= MAIN CONTENT ================= -->
+
+    <div class="top-content">
+
+        <!-- SMALL TITLE -->
+
+        <div class="reveal reveal-1">
+
+            <span class="top-line"></span>
+
+            <p>We Break Building , Not Promise</p>
+
+            <span class="top-line"></span>
+
+        </div>
+
+
+        <!-- MAIN TITLE -->
+
+        <h1 class="reveal reveal-2">
+
+            GOVIND
+
+            <span>CONTRACTOR</span>
+
+        </h1>
+
+
+        <!-- SUB TITLE -->
+
+        <h2 class="reveal reveal-3">
+
+            BUILDING
+            <strong>DEMOLITION</strong>
+
+        </h2>
+
+
+        <!-- DETAILS -->
+
+        <p class="details reveal reveal-4">
+
+         WE WORK ON THE DEMOLITION OF BUNGALOWS AND FACTORIES
+            <br>
+
+            BREAKE - CLEAR - DONE 
+
+        </p>
+
+
+        <!-- BUTTONS -->
+
+        <div class="buttons reveal reveal-5">
+
+            <a href="tel:+917210595966" class="main-btn">
+                CALL NOW
+            </a>
+
+
+            <a href="https://wa.me/917210595966"
+               target="_blank"
+               class="whatsapp-btn">
+
+                <span class="wa-icon">W</span>
+
+                WHATSAPP
+
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= 3 CONTACT NUMBERS ================= -->
+
+    <div class="contact-numbers reveal reveal-6">
+
+        <a href="tel:+917210595966">
+
+            <h4>CONTACT GOVIND</h4>
+
+            <strong>+91 72105 95966</strong>
+
+        </a>
+
+
+        <a href="tel:+919811928731">
+
+            <h4>CONTACT KUNJ BHIYARI</h4>
+
+            <strong>+91 98119 28731</strong>
+
+        </a>
+
+
+        <a href="tel:+918744922699">
+
+            <h4>CONTACT GOURAV</h4>
+
+            <strong>+91 87449 22699</strong>
+
+        </a>
+
+    </div>
+
+
+    <!-- ================= SCROLL ================= -->
+
+    <div class="scroll-indicator">
+
+        <span></span>
+
+        SCROLL
+
+    </div>
+
+
+</section>
+<!-- ================= INFINITE DEMOLITION SLIDER ================= -->
+
+<section class="demolition-slider">
+
+    <div class="slider-heading">
+        <span>OUR WORK</span>
+        <h2>DEMOLITION <strong>PROJECTS</strong></h2>
+    </div>
+
+    <div class="slider-window">
+
+        <div class="slider-track">
+
+            <!-- ORIGINAL 6 IMAGES -->
+
+            <div class="slide">
+                <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1920,fit=crop/YX4yPRNv9zTyVool/360_f_819016486_ddgzkbjbe8edezc4xgmhh7coyvmzh7r9-YD0648p93auqZvaO.jpg" alt="Building Demolition">
+            </div>
+
+            <div class="slide">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzT8asdrA-G4rnAgfHUuqLApgRH-oxZPMFztdQyiej4GacdWSw5QIsVe4&s=10" alt="Building Demolition">
+            </div>
+
+            <div class="slide">
+                <img src="https://images.jdmagicbox.com/quickquotes/images_main/residential-building-demolition-services-2225264254-i9bpn6ms.jpg" alt="Building Demolition">
+            </div>
+
+            <div class="slide">
+                <img src="https://5.imimg.com/data5/SELLER/Default/2026/4/596908533/FJ/JQ/GW/10272639/demolition-services-500x500.jpeg" alt="Building Demolition">
+            </div>
+
+            <div class="slide">
+                <img src="https://irp.cdn-website.com/c923c8fb/dms3rep/multi/opt/residential_vs_commercial_demolition-1920w.jpg" alt="Building Demolition">
+            </div>
+
+            <div class="slide">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqPLaIUGu-koNbw0r2IsqaCD1wsL5GSskS5jQKO_FY-c2MxWgUvUkF-mMU&s=10" alt="Building Demolition">
+            </div>
+
+
+            <!-- DUPLICATE 6 IMAGES
+                 INFINITE EFFECT KE LIYE -->
+
+            <div class="slide">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5BBwnDF6Dmwn0whEZRgSB8tlj6DHCRkLhtcABvsfsMSrAegaG2hu8yss&s=10" alt="Building Demolition">
+            </div>
+
+            <div class="slide">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8Ratt4MW2OZ9FYzS-CBtExeC4gAT-HUoit1hyhkRIwQ&s=10" alt="Building Demolition">
+            </div>
+
+            <div class="slide">
+                <img src="https://abatementandremediation.com/storage/articles/3JmvpzokB7xN8gKXkZlpBarmrdxuQ1UHYMaNtWHn.jpg" alt="Building Demolition">
+            </div>
+
+            <div class="slide">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvRldMWKiPiysUJc-A8ox-dpCKLPGjHd5_aBkVBisUKA&s=10" alt="Building Demolition">
+            </div>
+
+            <div class="slide">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPGAIiTIGhWBYog8NclFcP8Rv2r76zsFHnTu1byfDCXBWGlbI8qgdOIQvA&s=10" alt="Building Demolition">
+            </div>
+
+            <div class="slide">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFnA5fiaHKHu9O4FA_c6HdPxUH6TAxKsNKQISh0piPzr6zp_xVPrEegevC&s=10" alt="Building Demolition">
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- =====================================================
+     OUR WORK VIDEO SECTION
+===================================================== -->
+
+<section class="work-videos">
+
+    <div class="work-heading">
+
+        <span>OUR WORK</span>
+
+        <h2>
+            DEMOLITION <strong>WORK</strong>
+        </h2>
+
+        <p>
+            Our recent building demolition projects
+        </p>
+
+    </div>
+
+
+    <div class="video-grid">
+
+        <!-- VIDEO 01 -->
+        <div class="work-video">
+            <video controls muted loop playsinline preload="metadata">
+                <source src="video1.mp4" type="video/mp4">
+            </video>
+
+            <div class="video-label">
+                <span>01</span>
+                BUILDING DEMOLITION
+            </div>
+        </div>
+
+
+        <!-- VIDEO 02 -->
+        <div class="work-video">
+            <video controls muted loop playsinline preload="metadata">
+                <source src="video2.mp4" type="video/mp4">
+            </video>
+
+            <div class="video-label">
+                <span>02</span>
+                DEMOLITION WORK
+            </div>
+        </div>
+
+
+        <!-- VIDEO 03 -->
+        <div class="work-video">
+            <video controls muted loop playsinline preload="metadata">
+                <source src="video8.mp4" type="video/mp4">
+            </video>
+
+            <div class="video-label">
+                <span>03</span>
+                BUILDING WORK
+            </div>
+        </div>
+
+
+        <!-- VIDEO 04 -->
+        <div class="work-video">
+            <video controls muted loop playsinline preload="metadata">
+                <source src="video7.mp4" type="video/mp4">
+            </video>
+
+            <div class="video-label">
+                <span>04</span>
+                SITE DEMOLITION
+            </div>
+        </div>
+
+
+        <!-- VIDEO 05 -->
+        <div class="work-video">
+            <video controls muted loop playsinline preload="metadata">
+                <source src="video5.mp4" type="video/mp4">
+            </video>
+
+            <div class="video-label">
+                <span>05</span>
+                DEMOLITION PROJECT
+            </div>
+        </div>
+
+
+        <!-- VIDEO 06 -->
+        <div class="work-video">
+            <video controls muted loop playsinline preload="metadata">
+                <source src="video4.mp4" type="video/mp4">
+            </video>
+
+            <div class="video-label">
+                <span>06</span>
+                COMPLETE DEMOLITION
+            </div>
+        </div>
+
+    </div>
+
+</section>
+<!-- ================= DEMOLITION DETAILS ================= -->
+
+<section class="gc-about">
+
+    <div class="gc-about-left">
+
+        <span class="gc-label">GOVIND CONTRACTOR</span>
+
+        <h2>
+            PROFESSIONAL
+            <span>BUILDING DEMOLITION</span>
+        </h2>
+
+        <div class="gc-line"></div>
+
+        <p>
+            Govind Contractor provides professional building
+            demolition services for residential and commercial
+            properties.
+        </p>
+
+        <p>
+            We focus on safe demolition, proper planning,
+            efficient work and complete site clearing.
+        </p>
+
+        <div class="gc-features">
+
+            <div class="gc-feature">
+                <b>01</b>
+                <div>
+                    <h3>Safe Demolition</h3>
+                    <p>Safety-focused demolition work.</p>
+                </div>
+            </div>
+
+            <div class="gc-feature">
+                <b>02</b>
+                <div>
+                    <h3>Professional Work</h3>
+                    <p>Planned and organized site work.</p>
+                </div>
+            </div>
+
+            <div class="gc-feature">
+                <b>03</b>
+                <div>
+                    <h3>Site Clearing</h3>
+                    <p>Complete demolition waste clearing.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <a href="#contact" class="gc-button">
+            DISCUSS YOUR PROJECT
+        </a>
+
+    </div>
+
+
+    <!-- RIGHT IMAGE -->
+
+    <div class="gc-about-right">
+
+        <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRO7kg4Rw4h8dsVg-NsW1jWQLNs0H6BsKa0ozcZ7HJAVA&s=10"
+            alt="Govind Contractor Building Demolition"
+        >
+
+        <div class="gc-image-text">
+            <small>OUR WORK</small>
+            <h3>BUILDING<br>DEMOLITION</h3>
+        </div>
+
+    </div>
+
+</section>
+<!-- =====================================================
+     VISITING CARD SECTION
+     ===================================================== -->
+
+<section class="visiting-card-section">
+
+    <div class="visiting-card-container">
+
+        <!-- LEFT : VISITING CARD IMAGE -->
+        <div class="visiting-card-image">
+
+            <!-- YAHAN APNI VISITING CARD IMAGE KA NAAM LIKHO -->
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg4oQse2B2AgIaz3HspTI7QNzPJkMJUTsPjMTkvMk0WAfItwpyqbH0M1nO&s=10"
+                 alt="Govind Contractor Visiting Card">
+
+        </div>
+
+
+        <!-- RIGHT : CONTRACTOR DETAILS -->
+        <div class="visiting-card-details">
+
+            <span class="vc-small-title">GET IN TOUCH</span>
+
+            <h2>
+                GOVIND
+                <span>CONTRACTOR</span>
+            </h2>
+
+            <div class="vc-line"></div>
+
+            <p class="vc-description">
+                Professional building demolition contractor
+                providing residential, commercial and industrial
+                demolition services.
+            </p>
+
+
+            <!-- DETAILS -->
+
+            <div class="vc-detail">
+
+                <div class="vc-icon">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+
+                <div>
+                    <small>CONTRACTOR</small>
+                    <strong>Govind Contractor</strong>
+                </div>
+
+            </div>
+
+
+            <div class="vc-detail">
+
+                <div class="vc-icon">
+                    <i class="fa-solid fa-phone"></i>
+                </div>
+
+                <div>
+                    <small>CALL US</small>
+                    <a href="tel:+917210595966">
+                        +91 72105 95966
+                    </a>
+                </div>
+
+            </div>
+
+
+            <div class="vc-detail">
+
+                <div class="vc-icon">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </div>
+
+                <div>
+                    <small>WHATSAPP</small>
+                    <a href="https://wa.me/917210595966"
+                       target="_blank">
+                        +91 72105 95966
+                    </a>
+                </div>
+
+            </div>
+
+
+            <div class="vc-detail">
+
+                <div class="vc-icon">
+                    <i class="fa-solid fa-building"></i>
+                </div>
+
+                <div>
+                    <small>SERVICE</small>
+                    <strong>Building Demolition</strong>
+                </div>
+
+            </div>
+
+
+            <!-- BUTTONS -->
+
+            <div class="vc-buttons">
+
+                <a href="tel:+917210595966" class="vc-call-btn">
+                    <i class="fa-solid fa-phone"></i>
+                    CALL NOW
+                </a>
+
+                <a href="https://wa.me/917210595966"
+                   target="_blank"
+                   class="vc-whatsapp-btn">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    WHATSAPP
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- =====================================================
+     GOVIND CONTRACTOR FOOTER
+===================================================== -->
+
+<footer class="gc-footer">
+
+    <div class="gc-footer-main">
+
+
+        <!-- ================= BRAND ================= -->
+
+        <div class="gc-footer-brand">
+
+            <div class="gc-footer-logo">
+
+                <img src="https://demolitioncontractorshyderabad.com/wp-content/uploads/2022/02/Demolition-contractors-hyderabad-resized.png" alt="Govind Contractor Logo">
+
+                <div>
+                    <h2>GOVIND</h2>
+                    <span>CONTRACTOR</span>
+                </div>
+
+            </div>
+
+
+            <p>
+                Professional building demolition services
+                with reliable work, proper planning and
+                complete site clearing solutions.
+            </p>
+
+
+            <!-- SOCIAL ICONS -->
+
+            <div class="gc-social">
+
+                <!-- WHATSAPP -->
+
+                <a
+                    href="https://wa.me/917210595966"
+                    target="_blank"
+                    aria-label="WhatsApp"
+                >
+                    <span class="gc-wa-icon"><i class="fa-brands fa-square-whatsapp" style="color: rgb(116, 192, 252);"></i>
+</span>
+                </a>
+
+
+                <!-- CALL -->
+
+                <a
+                    href="tel:+917210595966"
+                    aria-label="Call"
+                >
+                    <span class="gc-call-icon"><i class="fa-duotone fa-solid fa-phone" style="--fa-primary-color: rgb(177, 151, 252); --fa-secondary-color: rgb(177, 151, 252);"></i></span>
+                </a>
+
+
+                <!-- INSTAGRAM -->
+
+                <a
+                    href="https://instagram.com/"
+                    target="_blank"
+                    aria-label="Instagram"
+                >
+                    <span class="gc-instagram-icon"><i class="fa-brands fa-instagram" style="color: rgb(116, 192, 252);"></i>
+</span>
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- ================= QUICK LINKS ================= -->
+
+        <div class="gc-footer-column">
+
+            <h3>QUICK LINKS</h3>
+
+            <a href="#home">Home</a>
+
+            <a href="#services">Services</a>
+
+            <a href="#about">About Us</a>
+
+            <a href="#contact">Contact</a>
+
+        </div>
+
+
+
+        <!-- ================= SERVICES ================= -->
+
+        <div class="gc-footer-column">
+
+            <h3>SERVICES</h3>
+
+            <a href="#">Building Demolition</a>
+
+            <a href="#">House Demolition</a>
+
+            <a href="#">Commercial Demolition</a>
+
+            <a href="#">Site Clearing</a>
+
+        </div>
+
+
+
+        <!-- ================= CONTACT ================= -->
+
+        <div class="gc-footer-column gc-contact">
+
+            <h3>CONTACT US</h3>
+
+
+            <a href="tel:+917210595966">
+
+                <span>☎</span>
+
+                <div>
+                    <small>CALL GOVIND</small>
+                    <strong>+91 72105 95966</strong>
+                </div>
+
+            </a>
+
+
+            <a href="tel:+919811928731">
+
+                <span>☎</span>
+
+                <div>
+                    <small>CALL KUNJ BHIYARI</small>
+                    <strong>+91 98119 28731</strong>
+                </div>
+
+            </a>
+
+
+            <a href="tel:+918744922699">
+
+                <span>☎</span>
+
+                <div>
+                    <small>CALL GOURAV</small>
+                    <strong>+91 87449 22699</strong>
+                </div>
+
+            </a>
+
+
+            <a
+                href="https://wa.me/917210595966"
+                target="_blank"
+                class="gc-footer-whatsapp"
+            >
+
+                <span><i class="fa-brands fa-whatsapp" style="color: rgb(177, 151, 252);"></i></span>
+
+                WhatsApp Us
+
+            </a>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- ================= FOOTER BOTTOM ================= -->
+
+    <div class="gc-footer-bottom">
+
+        <p>
+            © 2026 <strong>Govind Contractor</strong>.
+            All Rights Reserved.
+        </p>
+
+        <p>
+            Building Demolition Services
+        </p>
+
+    </div>
+
+</footer>
+<script src="script.js">
+// ========================================
+// GOVIND CONTRACTOR - TOP SECTION JS
+// ========================================
+
+
+// Background video
+const video = document.querySelector(".bg-video");
+
+if (video) {
+
+    video.playbackRate = 0.75;
+
+    video.play().catch(() => {
+        console.log("Video autoplay waiting...");
+    });
+
+}
+
+
+// ========================================
+// HEADER HIDE / SHOW ON SCROLL
+// ========================================
+
+let lastScroll = 0;
+
+const header = document.querySelector(".top-header");
+
+window.addEventListener("scroll", () => {
+
+    const currentScroll = window.scrollY;
+
+    if (currentScroll > lastScroll && currentScroll > 100) {
+
+        // Scroll DOWN = hide
+        header.classList.add("hide-header");
+
+    } else {
+
+        // Scroll UP = show
+        header.classList.remove("hide-header");
+
+    }
+
+    lastScroll = currentScroll;
+
+});
+
+
+// ========================================
+// MOUSE MOVEMENT EFFECT
+// ========================================
+
+const hero = document.querySelector(".top-section");
+const content = document.querySelector(".top-content");
+
+hero.addEventListener("mousemove", (e) => {
+
+    const x =
+        (window.innerWidth / 2 - e.clientX) / 120;
+
+    const y =
+        (window.innerHeight / 2 - e.clientY) / 120;
+
+    content.style.transform =
+        `translate(${x}px, ${y}px)`;
+
+});
+
+
+hero.addEventListener("mouseleave", () => {
+
+    content.style.transform =
+        "translate(0,0)";
+
+});
+// =====================================================
+// INFINITE DEMOLITION SLIDER
+// =====================================================
+
+const demolitionSlider =
+    document.querySelector(".demolition-slider");
+
+const demolitionTrack =
+    document.querySelector(".slider-track");
+
+
+// Pause when mouse is over slider
+if (demolitionSlider && demolitionTrack) {
+
+    demolitionSlider.addEventListener("mouseenter", () => {
+
+        demolitionTrack.style.animationPlayState = "paused";
+
+    });
+
+
+    demolitionSlider.addEventListener("mouseleave", () => {
+
+        demolitionTrack.style.animationPlayState = "running";
+
+    });
+
+}
+// =====================================================
+// WORK VIDEOS - AUTO PAUSE OTHER VIDEOS
+// =====================================================
+
+const workVideos =
+    document.querySelectorAll(".work-video video");
+
+workVideos.forEach((video) => {
+
+    video.addEventListener("play", () => {
+
+        workVideos.forEach((otherVideo) => {
+
+            if (otherVideo !== video) {
+
+                otherVideo.pause();
+
+            }
+
+        });
+
+    });
+
+});
+</script>
+
+</body>
+</html>
